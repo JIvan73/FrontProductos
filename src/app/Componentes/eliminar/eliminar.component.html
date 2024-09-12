@@ -1,0 +1,43 @@
+<div class="container">
+    <h4 style="background: yellow;"> Confirmar para Eliminar </h4>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">ID</label>
+      <input type="number" class="form-control" name="id" aria-describedby="emailHelp" [(ngModel)]="producto.idP" readonly>
+      
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">NOMBRE</label>
+      <input type="text" class="form-control" name="Nombre" [(ngModel)]="producto.nombre" readonly>
+      
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">PRECIO</label>
+        <input type="number" class="form-control" name="Precio" [(ngModel)]="producto.precio" readonly>
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">TIPO</label>
+        <input type="text" class="form-control" name="Tipo" [(ngModel)]="producto.tipo" readonly>
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">CADUCIDAD</label>
+        <input type="date" class="form-control" name="Caducidad" [(ngModel)]="producto.caducidad" readonly>
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">EXISTENCIA</label>
+        <input type="number" class="form-control" name="Existencia" [(ngModel)]="producto.existencia" readonly>
+        
+    </div>
+
+    
+    <button type="submit" class="btn btn-primary" (click)="eliminar()">Eliminar</button>
+  </form>
+</div>

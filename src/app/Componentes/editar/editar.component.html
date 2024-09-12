@@ -1,0 +1,43 @@
+<div class="container">
+    <h4 style="background: yellow;"> Ingresa los datos </h4>
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">ID</label>
+      <input type="number" class="form-control" name="id" aria-describedby="emailHelp" [(ngModel)]="producto.idP" readonly>
+      <div id="emailHelp" class="form-text"> Ingresa la Clave unica</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">NOMBRE</label>
+      <input type="text" class="form-control" name="Nombre" [(ngModel)]="producto.nombre">
+      <div id="emailHelp" class="form-text"> Ingresa el nuevo Producto</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">PRECIO</label>
+        <input type="number" class="form-control" name="Precio" [(ngModel)]="producto.precio">
+        <div id="emailHelp" class="form-text"> Captura el precio</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">TIPO</label>
+        <input type="text" class="form-control" name="Tipo" [(ngModel)]="producto.tipo">
+        <div id="emailHelp" class="form-text"> Que tipo de Producto es</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">CADUCIDAD</label>
+        <input type="date" class="form-control" name="Caducidad" [(ngModel)]="producto.caducidad">
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">EXISTENCIA</label>
+        <input type="number" class="form-control" name="Existencia" [(ngModel)]="producto.existencia">
+        <div id="emailHelp" class="form-text"> Existencia en Stock </div>
+    </div>
+
+    
+    <button type="submit" class="btn btn-primary" (click)="editar()">Editar</button>
+  </form>
+</div>
